@@ -1,0 +1,32 @@
+/*
+ *    Author: Dmitriy
+ *    
+ *    CSS Style file for sudoku game page
+ *    
+ */
+
+
+.root {
+    -fx-background-color: grey;
+}
+
+.button {
+    -fx-text-fill: black;
+    -fx-font-family: "Arial Narrow";
+    -fx-font-weight: bold;
+    -fx-background-color: white;
+}
+
+.button: hover {
+    -fx-background-color: "yellow";
+}
+
+.button:focused {
+    -fx-faint-focus-color: black;
+    -fx-inner-border: black;
+    -fx-body-color: yellow;
+ 
+    -fx-background-color: -fx-faint-focus-color -fx-inner-border, -fx-body-color; 
+    -fx-background-insets: -2, 1, 0;
+    -fx-background-radius: 0;
+}

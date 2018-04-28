@@ -1,0 +1,30 @@
+/*
+ *    Author: Dmitriy
+ *    
+ *    CSS Style file for sudoku intro page
+ *    
+ */
+
+
+.root {
+    -fx-background-color: grey;
+}
+
+.button {
+    -fx-text-fill: white;
+    -fx-font-family: "Arial Narrow";
+    -fx-font-weight: bold;
+    -fx-background-color: linear-gradient(#61a2b1, #2A5058);
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+    
+}
+
+.button:focused {
+    -fx-faint-focus-color: black;
+    -fx-inner-border: black;
+    -fx-body-color: linear-gradient(#61a2b1, #2A5058);
+ 
+    -fx-background-color: -fx-faint-focus-color -fx-inner-border, -fx-body-color; 
+    -fx-background-insets: -2, 1, 0;
+    -fx-background-radius: 2;
+}
