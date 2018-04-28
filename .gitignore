@@ -1,0 +1,12 @@
+
+.idea/dictionaries/Dmitriy.xml
+.idea/misc.xml
+.idea/modules.xml
+*.class
+*.xml
+out/production/sudoku/puzzles/1.txt
+out/production/sudoku/puzzles/2.txt
+out/production/sudoku/puzzles/solutions/1.txt
+out/production/sudoku/puzzles/solutions/2.txt
+out/production/sudoku/styles/game_styles.css
+out/production/sudoku/styles/intro_styles.css
