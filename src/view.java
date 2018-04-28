@@ -22,7 +22,7 @@ import javafx.scene.text.*;
 
 public class view {
     /* measurements of the window */
-    int width, height, vert_spc, btnVspc, btnHspc;
+    private int width, height, vert_spc, btnVspc, btnHspc;
     controller opts;
     /* the 2 different views needed so far */
     Stage mainStage, mStage;
@@ -103,7 +103,8 @@ public class view {
         switch (requested){
             case "choose"://load puzzle selection screen
                 /* next code snippet snagged from https://docs.oracle.com/javase/tutorial/essential/io/dirs.html */
-                Path dir = FileSystems.getDefault().getPath("puzzles", "");
+                Path dir = FileSystems.getDefault().getPath("src/puzzles", "");
+                System.out.println(dir.toString());
                 try (DirectoryStream<Path> stream = Files.newDirectoryStream(dir)) {
                     for (Path file: stream) {
                         String fn = file.getFileName().toString();

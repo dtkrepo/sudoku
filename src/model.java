@@ -48,7 +48,7 @@ public class model{
         BufferedReader buf;
         String line;
         try {
-            input = new FileReader("puzzles/" + puzzle);
+            input = new FileReader("src/puzzles/" + puzzle);
             buf = new BufferedReader(input);
             try {
                 int count = 0;
@@ -81,7 +81,7 @@ public class model{
         BufferedReader buf;
         String line;
         try {
-            input = new FileReader("puzzles/solutions/" + puzzle);
+            input = new FileReader("src/puzzles/solutions/" + puzzle);
             buf = new BufferedReader(input);
             try {
                 int count = 0;
