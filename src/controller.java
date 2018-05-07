@@ -6,18 +6,12 @@
  *
  */
  
-import java.util.HashSet;
-import java.util.Set;
-import java.lang.Character;
-import javafx.scene.control.Button; 
-import javafx.event.EventHandler;
 import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.scene.Scene;
-import javafx.scene.Node;
-import javafx.scene.input.KeyEvent;
-import javafx.scene.layout.GridPane;
+import javafx.scene.control.Button;
 import javafx.scene.input.KeyCode;
-import javafx.stage.Window;
+import javafx.scene.input.KeyEvent;
 import javafx.stage.Popup;
 import javafx.stage.Stage;
 
@@ -120,8 +114,8 @@ public class controller{
                 try { 
                     if (event.getCode() == KeyCode.ESCAPE){
                         /* NOT FINISHED YET */
-                        //menu = new Popup();
-                        //menu.show(mS, 100, 100);
+                        menu = new Popup();
+                        menu.show(mS, 100, 100);
                     }
                 } catch (Exception ex) {}
             }
